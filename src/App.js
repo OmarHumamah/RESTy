@@ -1,21 +1,24 @@
-import React from 'react';
+import React from "react";
 
-import './app.scss';
+import "./app.scss";
+import "./components/form/form.scss";
+import "./components/footer/footer.scss";
+import "./components/header/header.scss";
+import "./components/results/result.scss";
 
 // Let's talk about using index.js and some other name in the component folder
 // There's pros and cons for each way of doing this ...
-import Header from './components/header';
-import Footer from './components/footer';
-import Form from './components/form';
-import Results from './components/results';
+import Header from "./components/header";
+import Footer from "./components/footer";
+import Form from "./components/form";
+import Results from "./components/results";
 
 class App extends React.Component {
-
   constructor(props) {
     super(props);
     this.state = {
       data: null,
-      requestParams: {},
+      requestParams: {}
     };
   }
 
@@ -24,12 +27,12 @@ class App extends React.Component {
     const data = {
       count: 2,
       results: [
-        {name: 'fake thing 1', url: 'http://fakethings.com/1'},
-        {name: 'fake thing 2', url: 'http://fakethings.com/2'},
-      ],
+        { name: "fake thing 1", url: "http://fakethings.com/1" },
+        { name: "fake thing 2", url: "http://fakethings.com/2" }
+      ]
     };
-    this.setState({data, requestParams});
-  }
+    this.setState({ data, requestParams });
+  };
 
   render() {
     return (
