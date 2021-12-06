@@ -16,7 +16,7 @@ export default function Results(props) {
   return (
     <>
       <section id="results">
-        <pre>
+        <pre data-testid="result">
           {props.data ? JSON.stringify(props.data, undefined, 2) : null}
         </pre>
       </section>
