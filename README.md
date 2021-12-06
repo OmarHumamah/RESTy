@@ -6,7 +6,7 @@
 - **phase1**
   - structure the starter code child components to function base components.
 - **phase2**
-  - Extend your React Application so that your functional components are able to manage their own state variables using the `useState Hook`.
+  - Extend your React Application so that your functional components are able to manage their own state variables using the `useState() Hook`.
   - **NOTE: It is not a requirement to make the actual API call. That can be mocked with “fake” data** as the lab said.
 
 ## test
