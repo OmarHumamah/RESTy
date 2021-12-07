@@ -1,5 +1,6 @@
 import React from "react";
-
+import JSONPretty from "react-json-pretty";
+import "./json.css";
 // class Results extends React.Component {
 //   render() {
 //     return (
@@ -16,8 +17,17 @@ export default function Results(props) {
   return (
     <>
       <section id="results">
+        <pre data-testid="header">
+          <h1>Header</h1>
+          {props.data ? (
+            <JSONPretty id="json-pretty" data={props.data.headers}></JSONPretty>
+          ) : null}
+        </pre>
         <pre data-testid="result">
-          {props.data ? JSON.stringify(props.data, undefined, 2) : null}
+          <h1>Results</h1>
+          {props.data ? (
+            <JSONPretty id="json-pretty" data={props.data.data}></JSONPretty>
+          ) : null}
         </pre>
       </section>
     </>
