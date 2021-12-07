@@ -59,7 +59,7 @@ export default function App(props) {
       <div data-testid='method'>Request Method: {requestParams.method}</div>
       <div data-testid='url'>URL: {requestParams.url}</div>
       <Form handleApiCall={callApi} />
-     {requestParams.url && <Results data={data} />} 
+     {requestParams.url ? <Results data={data} />: <p id="load">Loading . . .</p>} 
       <Footer />
     </React.Fragment>
   );
