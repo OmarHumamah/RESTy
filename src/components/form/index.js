@@ -38,6 +38,7 @@ import React, {useState} from "react";
 export default function Form(props) {
   const [method, setMethod] = useState();
   const [url, setUrl] = useState();
+  const [body, setBody] = useState();
   
     // setMethod('GET');
     
@@ -45,7 +46,8 @@ export default function Form(props) {
     e.preventDefault();
     const formData = {
       method: method,
-      url: url
+      url: url,
+      body: body
     };
     props.handleApiCall(formData);
   };
@@ -65,6 +67,8 @@ export default function Form(props) {
           <span onClick={()=>{setMethod('PUT');}} data-testid='put' id="put">PUT</span>
           <span onClick={()=>{setMethod('DELETE');}} data-testid='delete' id="delete">DELETE</span>
         </label>
+        <h3>Body:</h3>
+        <textarea data-testid="body" onChange={(e)=>{setBody(e.target.value)}} name="body" type="text" rows='5'/>
       </form>
     </>
   );
