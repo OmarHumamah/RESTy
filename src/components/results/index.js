@@ -16,14 +16,14 @@ import "./json.css";
 export default function Results(props) {
   return (
     <>
-      <section id="results">
-        <pre data-testid="header">
+      <section data-testid="result" id="results">
+        <pre >
           <h1>Header</h1>
           {props.data ? (
             <JSONPretty id="json-pretty" data={props.data.headers}></JSONPretty>
           ) : null}
         </pre>
-        <pre data-testid="result">
+        <pre >
           <h1>Results</h1>
           {props.data ? (
             <JSONPretty id="json-pretty" data={props.data.data}></JSONPretty>
