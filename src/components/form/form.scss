@@ -33,7 +33,7 @@ form {
 
     }
     &.methods  {
-      span {
+      label {
         cursor: pointer;
         margin-right: 1rem;
         padding: .25rem .5rem;
@@ -49,6 +49,16 @@ form {
           background: rgba(107, 173, 0, 0.336);
         }
       }
+      :checked + label{
+        background: rgba(13, 14, 13, 0.336);
+      }
+      .ch{
+        opacity: 0;
+      }
     }
+  }
+  #area{
+    width: 90%; 
+    margin: auto 4%;
   }
 }
