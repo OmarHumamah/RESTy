@@ -9,7 +9,9 @@
   - Extend your React Application so that your functional components are able to manage their own state variables using the `useState() Hook`.
   - **NOTE: It is not a requirement to make the actual API call. That can be mocked with “fake” data** as the lab said.
 - **phase3**
-  -  connecting RESTy to live APIs, fetching and displaying remote data. Our primary focus will be to service GET requests
+  -  Connecting RESTy to live APIs, fetching and displaying remote data. Our primary focus will be to service GET requests
+- **phase4**
+  -  Tracking every API call and storing it in history, and replace any component state managements to use derived state from useReducer with a reducer function and initial state.
 
 ## test
 
@@ -35,6 +37,9 @@
 - **phase3**
   - [Netlify](https://resty-omar.netlify.app/)
 
+- **phase4**
+  - [Netlify](https://resty-omar.netlify.app/)
+
 ## UML
 
 - **phase1**
@@ -46,3 +51,11 @@
 
 - **phase3**
   - ![](wb3.png)
+
+- **phase3**
+  - ![](wb4.png)
+
+## Final result
+
+- ![](res.jpg)
+- ![](res2.jpg)

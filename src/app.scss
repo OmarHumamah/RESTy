@@ -21,10 +21,19 @@ body {
   header{
     color: darken( pink, 30)
   }
-  
+  #historyDiv{
+    margin-right: 20px;
+  }
   #load{
     margin: 0 auto ;
     font-size: 20px;
     font-weight: bolder;
   }
+}
+
+#historyDiv{
+  position: absolute;
+  top: 22vh;
+  overflow-y: scroll;
+  height: 21rem;
 }
