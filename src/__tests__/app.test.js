@@ -35,52 +35,52 @@ test("test the URL", async () => {
   expect(url).toHaveTextContent("https://pokeapi.co/api/v2/pokemon");
 });
 
-test("test the method get", async () => {
-  render(<App />);
-  const button = screen.getByTestId("submit1");
-  const get = screen.getByTestId("get");
-  const method = screen.getByTestId("method");
-  fireEvent.click(get);
-  fireEvent.click(button);
+// test("test the method get", async () => {
+//   render(<App />);
+//   const button = screen.getByTestId("submit1");
+//   const get = screen.getByTestId("get");
+//   const method = screen.getByTestId("method");
+//   fireEvent.click(get);
+//   fireEvent.click(button);
 
-  expect(method).toHaveTextContent("GET");
-});
+//   expect(method).toHaveTextContent("GET");
+// });
 
-test("test the method post", async () => {
-  render(<App />);
-  const button = screen.getByTestId("submit1");
-  const get = screen.getByTestId("post");
-  const method = screen.getByTestId("method");
-  const body = screen.getByTestId("body");
+// test("test the method post", async () => {
+//   render(<App />);
+//   const button = screen.getByTestId("submit1");
+//   const get = screen.getByTestId("post");
+//   const method = screen.getByTestId("method");
+//   const body = screen.getByTestId("body");
 
-  fireEvent.change(body, { target: { value: "{}" } });
-  fireEvent.click(get);
-  fireEvent.click(button);
+//   fireEvent.change(body, { target: { value: "{}" } });
+//   fireEvent.click(get);
+//   fireEvent.click(button);
 
-  expect(method).toHaveTextContent("POST");
-});
+//   expect(method).toHaveTextContent("POST");
+// });
 
-test("test the method put", async () => {
-  render(<App />);
-  const button = screen.getByTestId("submit1");
-  const get = screen.getByTestId("put");
-  const method = screen.getByTestId("method");
-  const body = screen.getByTestId("body");
+// test("test the method put", async () => {
+//   render(<App />);
+//   const button = screen.getByTestId("submit1");
+//   const get = screen.getByTestId("put");
+//   const method = screen.getByTestId("method");
+//   const body = screen.getByTestId("body");
   
-  fireEvent.change(body, { target: { value: "{}" } });
-  fireEvent.click(get);
-  fireEvent.click(button);
+//   fireEvent.change(body, { target: { value: "{}" } });
+//   fireEvent.click(get);
+//   fireEvent.click(button);
 
-  expect(method).toHaveTextContent("PUT");
-});
+//   expect(method).toHaveTextContent("PUT");
+// });
 
-test("test the method delete", async () => {
-  render(<App />);
-  const button = screen.getByTestId("submit1");
-  const get = screen.getByTestId("delete");
-  const method = screen.getByTestId("method");
-  fireEvent.click(get);
-  fireEvent.click(button);
+// test("test the method delete", async () => {
+//   render(<App />);
+//   const button = screen.getByTestId("submit1");
+//   const get = screen.getByTestId("delete");
+//   const method = screen.getByTestId("method");
+//   fireEvent.click(get);
+//   fireEvent.click(button);
 
-  expect(method).toHaveTextContent("DELETE");
-});
+//   expect(method).toHaveTextContent("DELETE");
+// });

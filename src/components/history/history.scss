@@ -1,0 +1,14 @@
+#history {
+    display: block;
+    margin: 1rem 1rem;
+    cursor: pointer;
+  .methods {
+    padding: .25rem .5rem;
+    margin-right: 1rem;
+    background: rgb(180, 236, 48);
+    border: solid #6fc437bd 1px;
+    border-radius: 20%;
+    box-shadow: 0px 0px 5px black;
+    transition: 1000ms;
+  }
+}
